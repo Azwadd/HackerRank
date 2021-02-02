@@ -1,0 +1,12 @@
+/* Completed Arrays Left Rotation Challenge in Java */
+static int[] rotLeft(int[] a, int d) {
+        int answer[] = a;
+        for (int j = 0; j < d;j++) {
+            int last = answer[0];
+            for (int i = 0;i < answer.length-1;i++) {
+                answer[i] = answer[i+1];
+            }
+            answer[answer.length-1] = last;
+        }
+        return answer;
+    }
